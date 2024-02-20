@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 
+Tutorial: https://www.youtube.com/watch?v=AkqqpjluJnk
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Namora comigo para sempre?</title>
+</head>
+
+
+<body>
+   
+    <main class="containner">
+
+    </main>
+    <div class="banner">
+
+        <div class="content">
+    <div id="conteudo">
+    <p>Ao longo dos anos, nosso amor cresceu e se fortaleceu, se tornando uma fonte inesgotável de felicidade e companheirismo. Desde o momento em que nos conhecemos, sabíamos que havia algo especial entre nós, algo que ultrapassaria o tempo e as dificuldades. Cada momento ao seu lado é uma lembrança preciosa, repleta de risadas, lágrimas, desafios e triunfos. Juntas, enfrentamos o mundo de mãos dadas, compartilhando sonhos, planos e segredos mais profundos.
+    Nossa conexão é tão profunda que podemos ler os pensamentos uma da outra e completar frases ao serem ditas, rs. É como se fôssemos duas almas que se encontraram em um mundo caótico e que só juntas, alcançamos a paz. O amor que sentimentos é como uma chama eterna que nunca se apaga, mesmo diante das tempestades da vida.
+    <p>Às vezes, olho para trás e me surpreendo com o caminho que percorremos juntas. Os altos e baixos, os momentos de alegria e tristeza, todos eles moldaram nosso relacionamento e nos tornaram mais fortes como casal. Sabemos que não somos perfeitas, mas é justamente essa imperfeição que torna nosso amor tão autêntico e verdadeiro.
+    Nossos 4 anos juntas foram marcados por inúmeras memórias felizes e experiências compartilhadas. Desde os pequenos gestos de carinho até as grandes celebrações de amor, cada momento é um lembrete do quanto somos abençoadas por ter uma à outra.
+    Não importa o que o futuro reserve, sei que nosso amor continuará a nos guiar e nos sustentar, iluminando o caminho à nossa frente com a promessa de um futuro cheio de amor e felicidade.
+    <p>É por isso que, neste momento especial de "Viva nossos 4 anos" peço que passemos não apenas esses anos juntas. Então você aceita ser minha companheira para toda a vida, construindo uma história de amor que ultrapassará o tempo e a eternidade?</p>
+        <div style="margin: auto;width: 170px;">
+            <button style="position: fixed;display: block;" class="btn" onclick="sim()">SIM ❤️</button>
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;">NÃO 💔</button>
+        </div>
+    </div>
+</body>
+<style>
+    #conteudo {
+        background-color: rgb(245, 183, 196);
+        height: 100vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-family:Tahoma;
+    }
+ 
+    .btn {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 80px;
+        border-radius: 5px;
+    }
+</style>
+
+<script>
+    function sim() {
+        alert("Você aceitou namorar e transcender nossa história comigo, e cada passo que daremos juntas é uma nova página de amor e felicidade que vamos escrever!");
+        // redireciona para um URL após clicar no SIM
+        location.href = "https://www.youtube.com/watch?v=AkqqpjluJnk";
+    }
+
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+</script>
+
+</html>
